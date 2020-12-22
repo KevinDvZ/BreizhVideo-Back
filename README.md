@@ -51,7 +51,20 @@ Je crée donc d'abord les modèles, en incluant le many to one et le join column
 
 ### Créations des services et des repositories associés
 
+Service show  => retourne la liste des show
+inserer un show
+updater un show
 
+Service Village => retourne la lsite des vilalges
+
+*échec d'une initialisation correcte, messages d'erreurs*
+
+## Mardi 14h00
+
+On s'arrête là pour le back. Je pars sur un affichage simple du tableau des films avec VueJs. Très déçu de ce que j'ai pu fournir en back, beaucoup de messages d'erreurs du a des fautes d'inexpérience du à un manque d'entrainement. Je me suis rendu compte que j'ai encore beaucoup de travail pour être efficace.
+
+Je regarde si l'api se lance et génère le json des films correctements.
+=> tout va bien, je ne touche plus au back. Je passe sur VueJs.
 
 
 
