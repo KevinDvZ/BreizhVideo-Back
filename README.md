@@ -36,7 +36,24 @@ Autowired de l'interface Film depuis le controller "/film"
 
 ## Mardi 12h00
 
-La liste de film est b iejn intégré dans la base de données , le endoint /films est fonctionnel et retourne le json. Perte de temps : nom du fichier sql que j'avais renommé, ce qu'il fait qu'il ne s'insérait pas, problème de majuscule sur le nom des tables => les désactiver dans les paramètre application.properties
+La liste de film est b iejn intégré dans la base de données , le endoint /films est fonctionnel et retourne le json. Perte de temps : nom du fichier sql que j'avais renommé, ce qu'il fait qu'il ne s'insérait pas, problème de majuscule sur le nom des tables => les désactiver dans les paramètre application.properties, oubli de l'annotation @Repository dans ce dernier... 
 
-*Ca avance. Clairement tout ne sera pas fini. Je me donne 15H15 pour repartir sur le back. On va tenter de créer quelques endpoints importants.*
+*Ca avance. Clairement tout ne sera pas fini. Je me donne 15H15 pour repartir sur le front. On va tenter de créer quelques endpoints importants.*
+
+### Création des shows & des Villages 
+
+Je vais m'atteler à l'initialisation des shows & des villages. D'après le diagramme de classe, la relation entre les village et les village est une relation one to many.
+
+Je crée donc d'abord les modèles, en incluant le many to one et le join column , qui demande donc aux show de référencer les villages. Un show contient un seul village, c'est un attribut unitaire typé Village.  on utilise "village_id" comme nom pour le join column. Rien à préciser pour dans le modèle du village, la relation est unique dans ce sens.
+
+*je me retrouve confronter à une erreur... l'annotation manytoone ne veut s'ajouter... Recherce de l'erreur..*
+*erreur contrée : j'avais mal déclaré  Village... enchainement d'erreur d'inattention!*
+
+### Créations des services et des repositories associés
+
+
+
+
+
+
 
